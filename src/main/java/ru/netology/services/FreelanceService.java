@@ -9,9 +9,8 @@ public class FreelanceService {
         int expenses = arg_expenses;
         int threshold = arg_threshold;
         for (int month = 1; month <= 12; month++) {
-            //System.out.println("Месяц "+month+". Денег "+money+". threshold "+threshold);
+
             if (money >= threshold) {
-                //System.out.println("Месяц "+month+". Денег "+money+". Буду отдыхать. Потратил "+expenses+", затем ещё ");
                 count++;
                 int tmp_money = money - expenses- (money - expenses)/3;
                 System.out.println("Месяц "+month+". Денег "+money+". Буду отдыхать. Потратил -"+expenses+", затем ещё -"+ tmp_money);
